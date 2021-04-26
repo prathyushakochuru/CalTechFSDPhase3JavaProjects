@@ -1,0 +1,23 @@
+package com.calc.consumer;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import javax.xml.namespace.QName;
+import javax.xml.ws.Service;
+
+public class ConsumerMain {
+
+	public static void main(String[] args) {
+String endpoint="http://localhost:7000/Calculate?wsdl";
+		
+		try {
+			URL url=new URL(endpoint);
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}
