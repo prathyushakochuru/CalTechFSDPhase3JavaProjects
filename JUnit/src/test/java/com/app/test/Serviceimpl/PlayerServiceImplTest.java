@@ -64,7 +64,7 @@ public class PlayerServiceImplTest {
 	void testgetPlayerByAgeforInvalid()
 	{
 		int age = 1000;
-		Assertions.assertEquals(null, service.getPlayersByAge(age));
+		Assertions.assertEquals(0, service.getPlayersByAge(age));
 	}
 
 }
