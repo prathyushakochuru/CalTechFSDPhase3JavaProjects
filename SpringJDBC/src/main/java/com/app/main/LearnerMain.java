@@ -25,6 +25,9 @@ public class LearnerMain {
 		System.out.println(dao.getLeanerbyId(2));
 		dao.deleteLearner(1);
 		
+		l1.setAddress("NY, USA");
+		System.out.println(dao.updateLeaner(l1));
+		
 		List<Learner> llist = dao.getAllLearners();
 		System.out.println("\n\nTotal "+llist.size()+" no of learners in DB. Printing their details : ");
 		for(Learner p:llist) {
